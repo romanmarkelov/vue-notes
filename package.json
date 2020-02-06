@@ -1,5 +1,5 @@
 {
-  "name": "todos",
+  "name": "vue-notes",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -30,6 +30,7 @@
     "prettier": "^1.19.1",
     "sass": "^1.23.7",
     "sass-loader": "^8.0.0",
+    "vue-property-decorator": "8.4.0",
     "vue-template-compiler": "^2.6.10"
   },
   "gitHooks": {

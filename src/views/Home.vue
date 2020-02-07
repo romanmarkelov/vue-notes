@@ -10,7 +10,7 @@
         <div class="todo-list__group">
           <div class="todo-list__subitem">Milk</div>
           <div class="todo-list__subitem">Bread</div>
-          <div class="todo-list__subitem">Potates</div>
+          <div class="todo-list__subitem">Potatoes</div>
         </div>
       </div>
 

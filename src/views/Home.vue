@@ -3,31 +3,10 @@
     <h1>Vue Notes</h1>
     <div class="todo-list">
       <div class="todo-list__item">
-        <div class="todo-list__header"><i class="icon-sticky-note"></i>Buy something</div>
-        <div class="todo-list__group">
-          <div class="todo-list__subitem">Milk</div>
-          <div class="todo-list__subitem">Bread</div>
-          <div class="todo-list__subitem">Potates</div>
+        <div class="todo-list__header">
+          Buy something
+          <svg class="icon icon-document-edit"><use xlink:href="#icon-document-edit"></use></svg>
         </div>
-      </div>
-      <div class="todo-list__item">
-        <div class="todo-list__header"><i class="icon-sticky-note"></i>Buy something</div>
-        <div class="todo-list__group">
-          <div class="todo-list__subitem">Milk</div>
-          <div class="todo-list__subitem">Bread</div>
-          <div class="todo-list__subitem">Potates</div>
-        </div>
-      </div>
-      <div class="todo-list__item">
-        <div class="todo-list__header"><i class="icon-sticky-note"></i>Buy something</div>
-        <div class="todo-list__group">
-          <div class="todo-list__subitem">Milk</div>
-          <div class="todo-list__subitem">Bread</div>
-          <div class="todo-list__subitem">Potates</div>
-        </div>
-      </div>
-      <div class="todo-list__item">
-        <div class="todo-list__header"><i class="icon-sticky-note"></i>Buy something</div>
         <div class="todo-list__group">
           <div class="todo-list__subitem">Milk</div>
           <div class="todo-list__subitem">Bread</div>
@@ -43,7 +22,7 @@
     </div>
 
     <button class="button button--create">
-      <i class="icon-plus"></i>
+      <svg class="icon icon-plus"><use xlink:href="#icon-plus"></use></svg>
     </button>
   </div>
 </template>
@@ -62,11 +41,27 @@ export default {
   margin-bottom: 20px;
   border-radius: 10px;
 
+  .icon {
+    fill: #adabbc;
+    width: 30px;
+    height: 30px;
+  }
+
+  .icon-directions {
+    margin-right: 10px;
+  }
+
+  .icon-document-edit {
+    margin-left: 20px;
+  }
+
   &__item {
     margin-bottom: 20px;
   }
 
   &__header {
+    display: flex;
+    align-items: center;
     margin-bottom: 10px;
     font-weight: bold;
     font-size: 18px;
@@ -111,8 +106,8 @@ export default {
   transition: 0.4s;
 
   .icon-plus {
-    position: relative;
-    top: -1px;
+    width: 30px;
+    height: 30px;
   }
 
   &:hover {
